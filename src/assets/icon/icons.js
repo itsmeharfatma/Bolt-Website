@@ -24,4 +24,4 @@ export {
     star,
     truckFast,
     twitter
-}
+};
