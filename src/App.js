@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './Components/Navbar';
+import Hero from './Sections/Hero';
+import PopularProducts from './Sections/PolularProducts';
+import SuperQuality from './Sections/SuperQuality';
+import Services from './Sections/Services';
+import SpecialOffers from './Sections/SpecialOffers';
+import CustomerReviews from './Sections/CustomerReviews';
+import Subscribe from './Sections/Subscribe';
+import Footer from './Sections/Footer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <main className='relative'>
+    <Navbar />
+    <section className='xl:padding-1 wide:padding-r padding-b'>
+      <Hero />
+    </section>
+    <section className='padding'>
+      <PopularProducts />
+    </section>
+    <section className='padding'>
+      <SuperQuality />
+    </section>
+    <section className='padding-x py-10'>
+      <Services />
+    </section>
+    <section className='padding'>
+      <SpecialOffers />
+    </section>
+    <section className='bg-pale-blue padding'>
+      <CustomerReviews />
+    </section>
+    <section className='padding-x sm:py32 py-16 w-full'>
+      <Subscribe />
+    </section>
+    <section className='bg-black padding-x padding-t pb-8'>
+      <Footer />
+    </section>
+  </main>
+);
 
 export default App;
