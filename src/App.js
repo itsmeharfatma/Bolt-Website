@@ -11,16 +11,16 @@ import Footer from './Sections/Footer';
 const App = () => (
   <main className='relative'>
     <Navbar />
-    <section className='xl:padding-l wide:padding-r padding-b'>
+    <section className='lg:padding-l wide:padding-r padding-b'>
       <Hero />
     </section>
-    <section className='padding'>
+    <section className='bg-pale-blue padding'>
       <PopularProducts />
     </section>
     <section className='padding'>
       <SuperQuality />
     </section>
-    <section className='padding-x py-10'>
+    <section className='bg-pale-blue padding-x py-10'>
       <Services />
     </section>
     <section className='padding'>
