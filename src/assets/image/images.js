@@ -5,10 +5,10 @@ import bigShoe3 from './big-shoe3.png'
 import customer1 from './customer1.jpeg'
 import customer2 from './customer2.svg'
 
-import footerLogo from './footer-logo.svg'
-import headerLogo from './header-logo.svg'
+import boltHeaderLogo from './bolt-header-logo.png'
+import boltFooterLogo from './bolt-footer-logo.png'
 
-import offer from './offer.svg'
+import offer from './offer.png'
 
 import shoe4 from './shoe4.svg'
 import shoe5 from './shoe5.svg'
@@ -29,8 +29,8 @@ export {
     customer1,
     customer2,
 
-    footerLogo,
-    headerLogo,
+    boltHeaderLogo,
+    boltFooterLogo,
 
     offer,
     shoe4,

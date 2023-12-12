@@ -1,22 +1,22 @@
 import React from 'react';
-import { footerLogo } from '../assets/image/images';
+import { boltFooterLogo } from '../assets/image/images';
 import { footerLinks, socialMedia } from '../constants';
 import { copyrightSign } from '../assets/icon/icons';
 
 const Footer = () => {
   return (
     <footer className='min-container'>
-      <div className='flex justify-between items-start gap-20 flex-wrap max-lg:flex-col'>
+      <div className='flex justify-between items-start gap-14 sm:gap-20 flex-wrap max-lg:flex-col'>
         <div className='flex flex-col items-start'>
           <a href='/'>
             <img 
-              src={footerLogo}
+              src={boltFooterLogo}
               alt='Footer Logo'
               width={150}
               height={46}
             />
           </a>
-          <p className='mt-6 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm'>
+          <p className='mt-3 sm:mt-6 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm'>
             Get Shoes ready for the new term at your nearest Bolt store. Get Rewards
           </p>
           <div className='flex items-center gap-5 mt-5'>

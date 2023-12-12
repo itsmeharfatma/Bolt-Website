@@ -20,7 +20,7 @@ const App = () => (
     <section className='padding'>
       <SuperQuality />
     </section>
-    <section className='bg-pale-blue padding-x py-24'>
+    <section className='bg-pale-blue padding-x sm:py-20 py-10'>
       <Services />
     </section>
     <section className='padding'>

@@ -9,11 +9,11 @@ const Subscribe = () => {
         <span className='text-coral-red'> Updates </span>
         & Newsletter
       </h3>
-      <div className='md:max-w-[45%] w-full flex items-center max-sm:flex-col gap-5 p-1.5 sm:border sm:border-slate-gray rounded-full'>
+      <div className='md:max-w-[45%] w-full flex items-center max-sm:flex-col gap-2 p-1.5 sm:border sm:border-slate-gray rounded-full'>
         <input type='text'
           placeholder='subscribe@bolt.com'
           className='input' />
-        <div className='flex max-sm:justify-end items-center max-sm:w-full'>
+        <div className='flex max-sm:justify-start items-center max-sm:w-full'>
           <Button
             label="Sign Up"
             fullWidth

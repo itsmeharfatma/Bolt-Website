@@ -1,5 +1,5 @@
 import React from 'react';
-import { headerLogo } from '../assets/image/images';
+import { boltHeaderLogo } from '../assets/image/images';
 import { hamburger } from '../assets/icon/icons';
 import { navLinks } from '../constants/index';
 
@@ -9,7 +9,7 @@ const Navbar = () => {
             <nav className='flex justify-between items-center max-container'>
                 <a href='/'>
                     <img
-                        src={headerLogo} 
+                        src={boltHeaderLogo} 
                         alt='Logo'
                         width={130}
                         height={29}

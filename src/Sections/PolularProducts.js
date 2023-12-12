@@ -4,7 +4,7 @@ import PopularProductCard from '../Components/PopularProductCard';
 
 const PolularProducts = () => {
   return (
-    <section id='products' className='min-container max-sm:mt-12'>
+    <section id='products' className='min-container'>
       <div className='flex flex-col justify-start gap-4'>
         <h2 className='text-4xl font-palanquin font-bold'>
           Our <span className='text-coral-red'>Polular</span> Products
