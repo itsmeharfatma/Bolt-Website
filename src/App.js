@@ -7,6 +7,7 @@ import SpecialOffers from './Sections/SpecialOffers';
 import CustomerReviews from './Sections/CustomerReviews';
 import Subscribe from './Sections/Subscribe';
 import Footer from './Sections/Footer';
+import ScrollToTop from "react-scroll-to-top";
 
 const App = () => (
   <main className='relative'>
@@ -35,6 +36,8 @@ const App = () => (
     <section className='bg-black padding-x padding-t pb-12'>
       <Footer />
     </section>
+
+    <ScrollToTop smooth top="20" className="override" style={{ borderRadius: "25px", backgroundColor: '#ff6453', width:'35px', height:'35px' }} component={<i class="fa-solid fa-arrow-up fa-lg" style={{ color: "white" }}></i>} />
   </main>
 );
 
