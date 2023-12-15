@@ -16,7 +16,7 @@ const Hero = () => {
           Our Brand New Collection
         </p>
         <h1 className='mt-6 font-palanquin text-[72px] leading-[74px] max-sm:text-[72px] max-sm:leading-[82px] font-bold'>
-          <span className='lg:bg-white lg:whitespace-nowrap relative z-10 pr-6'>The New Arrival</span>
+          <span className='lg:bg-white lg:whitespace-nowrap relative md:z-10 pr-6'>The New Arrival</span>
           <br />
           <span className='text-coral-red inline-block mt-3 '>Bolt</span> Shoes
         </h1>
