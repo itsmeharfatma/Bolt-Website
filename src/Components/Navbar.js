@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { boltHeaderLogo } from '../assets/image/images';
 import { navLinks } from '../constants/index';
 import Button from './Button';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     let [open, setOpen] = useState(false);
@@ -27,15 +28,15 @@ const Navbar = () => {
                         </li>
                     ))}
                     <li>
-                        <a href='#home' className='font-montserrat leading-normal text-lg text-slate-gray lg:hidden'>
+                        <Link to='/signUp' className='font-montserrat leading-normal text-lg text-slate-gray lg:hidden'>
                             Sign Up
-                        </a>
+                        </Link>
                     </li>
                 </ul>
 
-                <a href='#home' className='hidden lg:block'>
+                <Link to='/signUp' className='hidden lg:block'>
                     <Button label="Sign Up" />
-                </a>
+                </Link>
 
                 {/* Hamburger-Menu-Icon */}
                 <div onClick={() => setOpen(!open)} className='absolute right-8 top-[53px] cursor-pointer lg:hidden w-7 h-7'>
