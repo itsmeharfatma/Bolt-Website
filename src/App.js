@@ -24,7 +24,7 @@ const App = () => {
       <section className='padding'>
         <SuperQuality />
       </section>
-      <section className='bg-pale-blue padding-x sm:py-20 py-10'>
+      <section className='bg-pale-blue padding-x sm:py-12 py-10'>
         <Services />
       </section>
       <section className='padding'>
@@ -41,7 +41,7 @@ const App = () => {
       </section>
 
       <ScrollRestoration />
-      
+
       <ScrollToTop smooth top="20" className="override" style={{ borderRadius: "25px", backgroundColor: '#ff6453', width: '35px', height: '35px' }} component={<i class="fa-solid fa-arrow-up fa-lg" style={{ color: "white" }}></i>} />
     </main>
   )

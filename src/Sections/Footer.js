@@ -17,17 +17,17 @@ const Footer = () => {
               height={46}
             />
           </Link>
-          <p className='mt-3 sm:mt-3 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm'>
+          <p className='mt-2 sm:mt-3 text-sm leading-5 font-montserrat text-white-400 sm:max-w-sm'>
             Get Shoes ready for the new term at your nearest Bolt store. Get Rewards
           </p>
-          <div className='flex items-center gap-5 mt-5'>
+          <div className='flex items-center gap-4 mt-4'>
             {socialMedia.map((icon) => (
-              <div className='flex justify-center items-center w-9 h-9 bg-white rounded-full cursor-pointer'>
+              <div className='flex justify-center items-center w-8 h-8 bg-white rounded-full cursor-pointer'>
                 <img 
                   src={icon.src}
                   alt={icon.alt}
-                  width={22}
-                  height={22}
+                  width={21}
+                  height={21}
                 />
               </div>
             ))}
@@ -37,7 +37,7 @@ const Footer = () => {
         <div className='flex flex-1 justify-between lg:gap-10 gap-14 flex-wrap'>
           {footerLinks.map((section) => (
             <div key={section}>
-              <h4 className='text-white font-montserrat text-xl leading-normal font-medium mb-4'>{section.title}</h4>
+              <h4 className='text-white font-montserrat text-lg leading-normal font-medium mb-4'>{section.title}</h4>
               <ul>
                 {section.links.map((link) => (
                   <li className='mt-2 text-white-400 font-montserrat text-sm leading-normal hover:text-slate-gray cursor-pointer' key={link.name}>
@@ -50,13 +50,13 @@ const Footer = () => {
         </div>
       </div>
       
-      <div className='flex justify-between text-white-400 text-sm mt-20 max-sm:flex-col max-sm:items-center'>
+      <div className='flex justify-between text-white-400 text-xs mt-20 max-sm:flex-col max-sm:items-center'>
         <div className='flex flex-1 justify-start items-center gap-1 font-montserrat cursor-pointer'>
           <img 
             src={copyrightSign}
             alt='Copyright Logo'
-            width={18}
-            height={18}
+            width={16}
+            height={16}
             className='rounded-full m-0'
           />
           <p className='mt-0.5'>Copyright. All rights reserved.</p>

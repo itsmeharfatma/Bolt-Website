@@ -54,7 +54,7 @@
   }
 
   .padding-t {
-    @apply sm:pt-24 pt-12;
+    @apply sm:pt-16 pt-12;
   }
 
   .padding-b {
