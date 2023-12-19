@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { boltHeaderLogo } from '../assets/image/images';
-// import { hamburger } from '../assets/icon/icons';
 import { navLinks } from '../constants/index';
 import Button from './Button';
 
@@ -18,21 +17,8 @@ const Navbar = () => {
                         height={29}
                     />
                 </a>
-                {/* <ul className='flex-1 flex justify-center items-center gap-16 max-lg:hidden'>
-                    {navLinks.map((item) => (
-                        <li key={item.label}>
-                            <a href={item.href} className='font-montserrat leading-normal text-lg text-slate-gray'>
-                                {item.label}
-                            </a>
-                        </li>
-                    ))}
-                </ul> */}
 
-                <div onClick={() => setOpen(!open)} className='absolute right-8 top-[53px] cursor-pointer lg:hidden w-7 h-7'>
-                    { open ? <i class="fa-solid fa-xmark fa-2xl"></i> : <i class="fa-solid fa-bars fa-2xl"></i> }
-                </div>
-
-                <ul className={`lg:flex lg:justify-center lg:gap-16 lg:items-center lg:py-0 py-6 absolute lg:static lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:px-0 px-4 transition-all duration-0 ease-in ${open ? 'top-24 left-5 space-y-3 bg-white w-[88%] shadow-xl' : 'top-[-490px]'}`}>
+                <ul className={`lg:flex lg:flex-1 lg:justify-center lg:space-x-10 lg:items-center lg:py-0 py-8 absolute lg:static lg:px-0 px-4  ${open ? 'top-24 left-5 space-y-4 bg-white w-[88%] h-64 shadow-xl' : 'top-[-490px]'}`}>
                     {navLinks.map((item) => (
                         <li key={item.label}>
                             <a href={item.href} className='font-montserrat leading-normal text-lg text-slate-gray'>
@@ -51,14 +37,10 @@ const Navbar = () => {
                     <Button label="Sign Up" />
                 </a>
 
-                {/* <div className=''>
-                    <img
-                        src={hamburger}
-                        alt='Hamburger-icon'
-                        width={25}
-                        height={25}
-                    />
-                </div> */}
+                {/* Hamburger-Menu-Icon */}
+                <div onClick={() => setOpen(!open)} className='absolute right-8 top-[53px] cursor-pointer lg:hidden w-7 h-7'>
+                    {open ? <i class="fa-solid fa-xmark fa-2xl"></i> : <i class="fa-solid fa-bars fa-2xl"></i>}
+                </div>
             </nav>
         </header>
     );
