@@ -1,12 +1,12 @@
 import Navbar from './Components/Navbar';
-import Hero from './Sections/Hero';
-import PopularProducts from './Sections/PolularProducts';
-import SuperQuality from './Sections/SuperQuality';
-import Services from './Sections/Services';
-import SpecialOffers from './Sections/SpecialOffers';
-import CustomerReviews from './Sections/CustomerReviews';
-import Subscribe from './Sections/Subscribe';
-import Footer from './Sections/Footer';
+import Hero from './Homepage/Hero';
+import PopularProducts from './Homepage/PolularProducts';
+import SuperQuality from './Homepage/SuperQuality';
+import Services from './Homepage/Services';
+import SpecialOffers from './Homepage/SpecialOffers';
+import CustomerReviews from './Homepage/CustomerReviews';
+import Subscribe from './Homepage/Subscribe';
+import Footer from './Homepage/Footer';
 import ScrollToTop from "react-scroll-to-top";
 import { ScrollRestoration } from "react-router-dom";
 

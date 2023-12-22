@@ -15,11 +15,14 @@ const PopularProductCard = ({ imgURL, name, price }) => {
                     src={star}
                     alt='rating'
                     width={16}
-                    height={16} 
+                    height={16}
                 />
-                <p className='mt-0.5 font-montserrat text-xs leading-normal text-slate-gray'>
+                <p className='mt-0.5 mr-36 font-montserrat text-xs leading-normal text-slate-gray'>
                     (4.5)
                 </p>
+                <div className='cursor-pointer'>
+                    <i class="fa-solid fa-cart-shopping" style={{ color: "#FF6454" }}></i>
+                </div>
             </div>
             <h3 className='mt-0.5 font-semibold text-xl leading-normal font-palanquin'>{name}</h3>
             <p className='font-semibold font-montserrat text-coral-red text-base leading-normal'>{price}</p>

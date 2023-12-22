@@ -1,6 +1,9 @@
 import React from 'react';
 import { products } from '../constants';
 import PopularProductCard from '../Components/PopularProductCard';
+import Button from '../Components/Button';
+import { arrowRight } from '../assets/icon/icons';
+import { Link } from 'react-router-dom';
 
 const PolularProducts = () => {
   return (
@@ -18,6 +21,12 @@ const PolularProducts = () => {
         {products.map((product) => (
           <PopularProductCard key={product.name} {...product} />
         ))}
+      </div>
+
+      <div className='mt-6'>
+        <Link to='/products'>
+          <Button label="View more" iconURL={arrowRight} />
+        </Link>
       </div>
     </section>
   )
