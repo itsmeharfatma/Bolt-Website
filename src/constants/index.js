@@ -31,24 +31,28 @@ export const statistics = [
 
 export const products = [
     {
+        id: 1,
         imgURL: shoe4,
         name: "Bolt Air Jordan-01",
-        price: "$200.20",
+        price: "200.20",
     },
     {
+        id: 2,
         imgURL: shoe5,
         name: "Bolt Air Jordan-10",
-        price: "$210.20",
+        price: "210.20",
     },
     {
+        id: 3,
         imgURL: shoe6,
         name: "Bolt Air Jordan-100",
-        price: "$220.20",
+        price: "220.20",
     },
     {
+        id: 4,
         imgURL: shoe7,
         name: "Bolt Air Jordan-001",
-        price: "$230.20",
+        price: "230.20",
     },
 ];
 

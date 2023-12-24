@@ -24,25 +24,10 @@ const Products = () => {
       </div>
       <div className='mt-5 grid lg:gird-cols-4 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 sm:gap-10 gap-8'>
         {products.map((product) => (
-          <PopularProductCard key={product.name} {...product} />
+          <PopularProductCard data={product} />
         ))}
       </div>
-      <div className='mt-5 grid lg:gird-cols-4 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 sm:gap-10 gap-8'>
-        {products.map((product) => (
-          <PopularProductCard key={product.name} {...product} />
-        ))}
-      </div>
-      <div className='mt-5 grid lg:gird-cols-4 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 sm:gap-10 gap-8'>
-        {products.map((product) => (
-          <PopularProductCard key={product.name} {...product} />
-        ))}
-      </div>
-      <div className='mt-5 grid lg:gird-cols-4 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 sm:gap-10 gap-8'>
-        {products.map((product) => (
-          <PopularProductCard key={product.name} {...product} />
-        ))}
-      </div>
-
+      
       <ScrollRestoration />
     </section>
   )

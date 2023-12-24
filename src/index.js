@@ -7,6 +7,7 @@ import App from './App';
 import SignUp from './Pages/SignUp';
 import Products from './Pages/Products';
 import Cart from './Pages/Cart'
+import { ShopContextProvider } from './context/ShopContextProvider';
 
 const router = createBrowserRouter([
   {
@@ -32,7 +33,9 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ShopContextProvider>
+      <RouterProvider router={router} />
+    </ShopContextProvider>
   </React.StrictMode>
 );
 
