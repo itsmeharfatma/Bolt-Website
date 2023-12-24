@@ -8,7 +8,7 @@ import { ScrollRestoration } from "react-router-dom";
 
 const Products = () => {
   return (
-    <section id='products' className='min-container my-14'>
+    <section className='min-container my-14'>
       <div className='flex flex-1 justify-between items-center mb-8'>
         <Link to='/'>
           <img

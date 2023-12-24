@@ -35,7 +35,7 @@ export const ShopContextProvider = (props) => {
             }
         }
 
-        return totalAmount;
+        return totalAmount.toFixed(2);
     };
 
     const contextValue = {
