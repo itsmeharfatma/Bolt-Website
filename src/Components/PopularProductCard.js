@@ -37,7 +37,10 @@ const PopularProductCard = (props) => {
 
             </div>
             <h3 className='mt-0.5 font-semibold text-xl leading-normal font-palanquin'>{name}</h3>
-            <p className='font-semibold font-montserrat text-coral-red text-base leading-normal'>${price}</p>
+            <p className='font-semibold font-montserrat text-coral-red text-base leading-normal'>
+                <span className='text-black font-palanquin'>MRP:</span> ${price}
+            </p>
+            
         </div>
     )
 };

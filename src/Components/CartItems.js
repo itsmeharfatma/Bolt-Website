@@ -7,7 +7,7 @@ const CartItems = (props) => {
     const { cartItems, addToCart, removeFromCart, updataCartItemCount } = useContext(ShopContext);
 
     return (
-        <div className='flex flex-row justify-center items-center gap-8 rounded-xl shadow-xl px-6 py-6 my-8 sm:w-[600px]'>
+        <div className='flex flex-row justify-center items-center gap-12 rounded-xl shadow-xl px-6 py-6 sm:w-[600px]'>
             <img
                 src={imgURL}
                 alt={name}
@@ -16,7 +16,9 @@ const CartItems = (props) => {
 
             <div>
                 <h3 className='mt-0.5 font-semibold text-2xl leading-normal font-palanquin'>{name}</h3>
-                <p className='font-semibold font-montserrat text-coral-red text-lg leading-normal'>${price}</p>
+                <p className='font-semibold font-montserrat text-coral-red text-base leading-normal'>
+                    <span className='text-black font-palanquin'>MRP: </span>${price}
+                </p>
 
                 <div className='mt-8 flex gap-1'>
                     <button onClick={() => removeFromCart(id)}> <i class="fa-solid fa-circle-minus fa-xl" style={{ color: "#FF6454" }}></i> </button>
