@@ -22,12 +22,18 @@ const Products = () => {
           <Button label="View cart" />
         </Link>
       </div>
-      <div className='mt-32 grid lg:gird-cols-4 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 sm:gap-10 gap-8'>
+      <h1 className='mt-32 text-4xl font-palanquin font-bold'>
+        Our <span className='text-coral-red'>Super Quality</span> Products
+      </h1>
+      <p className='md:max-w-xl info-text mt-4'>
+        Experience top-notch quality and style with our sought-after selections. Discover a world of comfort, design, and value
+      </p>
+      <div className='mt-6 grid lg:gird-cols-4 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 sm:gap-10 gap-8'>
         {products.map((product) => (
           <PopularProductCard data={product} />
         ))}
       </div>
-      
+
       <ScrollRestoration />
     </section>
   )

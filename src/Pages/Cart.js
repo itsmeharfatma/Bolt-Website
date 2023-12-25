@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { products } from '../constants';
 import { ShopContext } from '../context/ShopContextProvider';
 import { boltHeaderLogo } from '../assets/image/images';
+import { arrowRight } from '../assets/icon/icons';
 import CartItems from '../Components/CartItems';
 import Button from '../Components/Button';
 import { Link } from 'react-router-dom';
@@ -26,9 +27,14 @@ const Cart = () => {
           <Button label="Continue shopping" />
         </Link>
       </div>
-      <h1 className='mt-32 text-4xl font-palanquin font-bold'>Your <span className='text-coral-red'>Cart</span> Items</h1>
-
-      <div className='flex justify-start flex-wrap py-6 items-center gap-4'>
+      <h1 className='mt-32 text-4xl font-palanquin font-bold'>
+        Your <span className='text-coral-red'>Cart</span> Items
+      </h1>
+      <p className='md:max-w-xl font-montserrat text-lg leading-7 text-green-600 mt-4'>
+        <span><i class="fa-solid fa-circle-check fa-lg" style={{ color: "#00c24a" }}></i> </span>
+        Your order is eligible for <span className='font-semibold'>Free</span> Delivery.
+      </p>
+      <div className='flex justify-start flex-wrap py-2 items-center gap-4'>
         {products.map((product) => {
           if (cartItems[product.id] !== 0) {
             return <CartItems data={product} />
@@ -37,13 +43,13 @@ const Cart = () => {
       </div>
 
       {totalAmount > 0 ? (
-        <div className='flex flex-col gap-4'>
-          <p className='text-xl font-montserrat leading-normal font-semibold'>Subtotal: ${totalAmount}</p>
+        <div className='mt-6 flex flex-col gap-4'>
+          <p className='text-xl font-montserrat leading-normal font-semibold'>Subtotal: <span className='text-coral-red'>${totalAmount}</span></p>
           <div>
-            <Button label="Buy now" />
+            <Button label="Proceed to Buy" iconURL={arrowRight} />
           </div>
         </div>
-      ) : (<h1 className='mt-16 text-3xl font-palanquin font-bold text-center text-coral-red'>Your Cart Is Empty..!
+      ) : (<h1 className='mt-16 text-3xl font-palanquin font-semibold text-center text-coral-red'>Your Cart Is Empty..!
       </h1>)
       }
 
