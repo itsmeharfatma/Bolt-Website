@@ -34,7 +34,7 @@ const Navbar = () => {
                     </li>
                 </ul>
 
-                <Link to='/signUp' className='hidden lg:block'>
+                <Link to='/' className='hidden lg:block'>
                     <Button label="Sign Up" />
                 </Link>
 

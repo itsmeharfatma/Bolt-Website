@@ -23,7 +23,10 @@ const Hero = () => {
           Discover stylish Bolt arrivals, quality comfort, and innovation for your active life.
         </p>
 
-        <Button label="Shop now" iconURL={arrowRight} />
+        <Link to='/products'>
+          <Button label="Shop now" iconURL={arrowRight} />
+        </Link>
+        {/* <Button label="Shop now" iconURL={arrowRight} /> */}
 
         <div className='flex justify-start items-start flex-wrap w-full mt-10 gap-12'>
           {statistics.map((stat) => (
