@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import Home from '../Pages/Home';
-import SignUp from '../Pages/SignUp';
+// import SignUp from '../Pages/SignUp';
 import Products from '../Pages/Products';
 import Cart from '../Pages/Cart';
 import { AnimatePresence } from 'framer-motion';
