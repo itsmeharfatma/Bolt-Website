@@ -15,7 +15,7 @@ const Cart = () => {
 
   return (
     <motion.section className='relative min-container my-14' initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0, transition: { duration: 0.1 } }}>
-      <div className='fixed top-0 left-0 right-0 px-20 pt-6 pb-3 bg-white flex flex-1 justify-between items-center shadow'>
+      <div className='fixed top-0 left-0 right-0 bg-white flex flex-1 justify-between items-center shadow px-4 pt-5 pb-3 lg:px-20 lg:pt-6 lg:pb-3'>
         <Link to='/'>
           <img
             src={boltHeaderLogo}
