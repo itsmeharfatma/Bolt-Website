@@ -28,11 +28,11 @@ const Cart = () => {
           <Button label="Continue shopping" />
         </Link>
       </div>
-      <div className='flex justify-center items-start max-md:flex-col sm:gap-28 gap-8 w-full'>
+      <div className='mt-36 flex justify-center items-start max-md:flex-col sm:gap-28 gap-8 w-full'>
         {totalAmount > 0 ? (
           <>
             <div className='flex flex-1 flex-col'>
-              <h1 className='mt-28 text-4xl font-palanquin font-bold'>
+              <h1 className=' text-4xl font-palanquin font-bold'>
                 Your <span className='text-coral-red'>Cart</span> Items
               </h1>
               <p className='md:max-w-xl font-montserrat text-lg leading-7 text-green-600 mt-4'>
@@ -49,7 +49,7 @@ const Cart = () => {
             </div>
 
             <div className='flex flex-1 justify-center items-center'>
-              <div className='mt-60 flex flex-col gap-4'>
+              <div className='mt-28 flex flex-col gap-4'>
                 <p className='text-xl font-montserrat leading-normal font-semibold'>Subtotal: <span className='text-coral-red'>${totalAmount}</span></p>
                 <div>
                   <Button label="Proceed to Buy" iconURL={arrowRight} />

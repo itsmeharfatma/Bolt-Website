@@ -23,7 +23,7 @@ const Products = () => {
           <Button label="View cart" />
         </Link>
       </div>
-      <h1 className='mt-40 text-4xl font-palanquin font-bold'>
+      <h1 className='mt-36 text-4xl font-palanquin font-bold'>
         Our <span className='text-coral-red'>Super Quality</span> Products
       </h1>
       <p className='md:max-w-xl info-text mt-4'>
