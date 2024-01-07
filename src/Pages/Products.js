@@ -4,8 +4,7 @@ import PopularProductCard from '../Components/PopularProductCard';
 import { boltHeaderLogo } from '../assets/image/images';
 import { Link } from 'react-router-dom';
 import Button from '../Components/Button';
-// import { ScrollRestoration } from "react-router-dom";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 const Products = () => {
   return (
@@ -36,8 +35,6 @@ const Products = () => {
           ))}
         </div>
       </div>
-
-      {/* <ScrollRestoration /> */}
     </motion.section>
   )
 }

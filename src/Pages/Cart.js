@@ -6,7 +6,8 @@ import { arrowRight } from '../assets/icon/icons';
 import CartItems from '../Components/CartItems';
 import Button from '../Components/Button';
 import { Link } from 'react-router-dom';
-import { motion } from "framer-motion"
+import { ScrollRestoration } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Cart = () => {
   const { cartItems, getTotalCartAmount } = useContext(ShopContext);
@@ -68,6 +69,9 @@ const Cart = () => {
         </h1>)
         }
       </div>
+
+      <ScrollRestoration />
+
     </motion.section>
   )
 }
