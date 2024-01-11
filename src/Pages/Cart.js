@@ -58,15 +58,7 @@ const Cart = () => {
               </div>
             </div>
           </>
-        ) : (<h1 className='mt-60 text-3xl font-palanquin font-semibold text-coral-red'>Your Shopping Cart Is Empty..!<span><lord-icon
-          src="https://cdn.lordicon.com/wpyrrmcq.json"
-          trigger="loop"
-          delay="0"
-          colors="primary:#e83f30"
-          style={{width:"30px", height:"30px"}}
-        >
-        </lord-icon></span>
-        </h1>)
+        ) : (<h1 className='mt-60 text-3xl font-palanquin font-semibold text-coral-red'>Your Shopping Cart Is Empty..!</h1>)
         }
       </div>
 
