@@ -16,7 +16,7 @@ const Cart = () => {
 
   return (
     <motion.section className='relative min-container my-14' initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0, transition: { duration: 0.1 } }}>
-      <div className='fixed top-0 left-0 right-0 bg-white flex flex-1 justify-between items-center shadow px-4 pt-5 pb-3 lg:px-20 lg:pt-6 lg:pb-3'>
+      <div className='fixed top-0 left-0 right-0 bg-white flex flex-1 justify-between items-center shadow pl-4 pr-6 pt-5 pb-3 lg:px-20 lg:pt-6 lg:pb-3'>
         <Link to='/'>
           <img
             src={boltHeaderLogo}
@@ -29,7 +29,7 @@ const Cart = () => {
           <Button label="Continue shopping" />
         </Link>
       </div>
-      <div className='mt-36 flex justify-center items-start max-md:flex-col sm:gap-28 gap-8 w-full'>
+      <div className='mt-32 px-8 lg:px-0 flex justify-center items-start max-md:flex-col sm:gap-28 gap-8 w-full'>
         {totalAmount > 0 ? (
           <>
             <div className='flex flex-1 flex-col'>
