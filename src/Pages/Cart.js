@@ -17,17 +17,31 @@ const Cart = () => {
   return (
     <motion.section className='relative min-container my-14' initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0, transition: { duration: 0.1 } }}>
       <div className='fixed top-0 left-0 right-0 bg-white flex flex-1 justify-between items-center shadow pl-4 pr-6 pt-5 pb-3 lg:px-20 lg:pt-6 lg:pb-3'>
-        <Link to='/'>
+        <Link to='/' className='max-md:hidden'>
           <img
             src={boltHeaderLogo}
             alt='Logo'
-            width={130}
+            width={110}
             height={29}
           />
         </Link>
-        <Link to='/products'>
+        <div className='rounded-full py-1.5 px-2.5 shadow md:hidden'>
+          <Link to='/products'>
+            <button><i class="fa-solid fa-chevron-left fa-xl" style={{ color: "#FF6454" }}></i></button>
+            {/* <button><i class="fa-solid fa-arrow-left fa-xl" style={{ color: "#FF6454" }}></i></button> */}
+          </Link>
+        </div>
+        <Link to='/products' className='max-md:hidden'>
           <Button label="Continue shopping" />
         </Link>
+        <div className='space-x-4 md:hidden'>
+          <Link to='/'>
+            <button><i class="fa-solid fa-house fa-lg" style={{ color: "#FF6454" }}></i></button>
+          </Link>
+          <Link to='/products'>
+            <button><i class="fa-solid fa-user fa-lg" style={{ color: "#FF6454" }}></i></button>
+          </Link>
+        </div>
       </div>
       <div className='mt-32 px-8 lg:px-0 flex justify-center items-start max-md:flex-col sm:gap-28 gap-8 w-full'>
         {totalAmount > 0 ? (
