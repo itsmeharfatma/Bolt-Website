@@ -7,11 +7,11 @@ const CartItems = (props) => {
     const { cartItems, addToCart, removeFromCart, updataCartItemCount } = useContext(ShopContext);
 
     return (
-        <div className='flex flex-col md:flex-row justify-center items-center gap-12 rounded-xl shadow-xl px-6 py-6 sm:w-[600px]'>
+        <div className='flex flex-col md:flex-row justify-center items-start sm:items-center gap-0 sm:gap-12 rounded-2xl sm:rounded-xl shadow-xl px-6 py-6 w-[300px] sm:w-[600px]'>
             <img
                 src={imgURL}
                 alt={name}
-                className='w-[220px] h-[220px]'
+                className='w-[280px] h-[280px] sm:w-[220px] sm:h-[220px]'
             />
 
             <div>
