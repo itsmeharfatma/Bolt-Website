@@ -9,18 +9,35 @@ import { motion } from "framer-motion";
 const Products = () => {
   return (
     <motion.section className='relative min-container my-14' initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0, transition: { duration: 0.1 } }}>
-      <div className='fixed top-0 left-0 right-0 flex flex-1 justify-between items-center bg-white lg:px-20 lg:pt-6 lg:pb-3 shadow pl-4 pr-6 pt-5 pb-3'>
-        <Link to='/'>
+      <div className='fixed max-sm:h-[62px] top-0 left-0 right-0 flex flex-1 justify-between items-center bg-white lg:px-20 lg:pt-6 lg:pb-3 shadow px-4 py-2 '>
+        <Link to='/' className='max-md:hidden'>
           <img
             src={boltHeaderLogo}
             alt='Logo'
-            width={130}
+            width={110}
             height={29}
           />
         </Link>
-        <Link to='/cart'>
+        <div className='rounded-full py-1.5 px-2.5 shadow md:hidden'>
+          <Link to='/products'>
+            <button><i class="fa-solid fa-chevron-left fa-xl" style={{ color: "#FF6454" }}></i></button>
+            {/* <button><i class="fa-solid fa-arrow-left fa-xl" style={{ color: "#FF6454" }}></i></button> */}
+          </Link>
+        </div>
+        <Link to='/cart' className='max-md:hidden'>
           <Button label="View cart" />
         </Link>
+        <div className='space-x-3 md:hidden'>
+          {/* <Link to='/'>
+            <button><i class="fa-solid fa-house fa-lg" style={{ color: "#FF6454" }}></i></button>
+          </Link> */}
+          <Link to='/cart'>
+            <button><i class="fa-solid fa-cart-shopping fa-lg" style={{ color: "#FF6454" }}></i></button>
+          </Link>
+          <>
+            <button><i class="fa-solid fa-user fa-lg" style={{ color: "#FF6454" }}></i></button>
+          </>
+        </div>
       </div>
       <div className='lg:mt-36 mt-32 px-8 lg:px-0'>
         <h1 className='text-4xl font-palanquin font-bold'>
