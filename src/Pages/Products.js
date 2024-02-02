@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 const Products = () => {
   return (
     <motion.section className='relative min-container my-14' initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0, transition: { duration: 0.1 } }}>
-      <div className='fixed max-sm:h-[62px] top-0 left-0 right-0 flex flex-1 justify-between items-center bg-white lg:px-20 lg:pt-6 lg:pb-3 shadow px-4 '>
+      <div className='fixed max-sm:h-[78px] top-0 left-0 right-0 flex flex-1 justify-between items-center bg-white lg:px-20 lg:pt-6 lg:pb-3 shadow px-6 pt-3 pb-2'>
         <Link to='/' className='max-md:hidden'>
           <img
             src={boltHeaderLogo}

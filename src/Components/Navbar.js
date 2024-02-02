@@ -8,7 +8,7 @@ const Navbar = () => {
     let [open, setOpen] = useState(false);
 
     return (
-        <header className='px-8 py-7 sm:px-24 sm:py-10 absolute z-10 w-full'>
+        <header className='px-7 py-5 sm:px-24 sm:py-10 absolute z-10 w-full'>
             <nav className='flex justify-between items-center max-container'>
                 <a href='/'>
                     <img
@@ -40,7 +40,7 @@ const Navbar = () => {
                 </Link>
 
                 {/* Hamburger-Menu-Icon */}
-                <div onClick={() => setOpen(!open)} className='absolute right-7 top-[38px] cursor-pointer lg:hidden w-6 h-6'>
+                <div onClick={() => setOpen(!open)} className='absolute right-6 top-[34px] cursor-pointer lg:hidden w-6 h-6'>
                     {open ? <i class="fa-solid fa-xmark fa-xl"></i> : <i class="fa-solid fa-bars fa-xl"></i>}
                 </div>
             </nav>
