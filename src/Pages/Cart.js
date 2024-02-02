@@ -38,12 +38,12 @@ const Cart = () => {
           <Link to='/'>
             <div className='flex flex-col'>
               <button><i class="fa-solid fa-house fa-lg" style={{ color: "#FF6454" }}></i></button>
-              <p className='text-slate-gray font-palanquin text-xs'>Home</p>
+              <p className='font-palanquin text-xs'>Home</p>
             </div>
           </Link>
           <div className='flex flex-col'>
             <button><i class="fa-solid fa-user fa-lg" style={{ color: "#FF6454" }}></i></button>
-            <p className='text-slate-gray font-palanquin text-xs'>You</p>
+            <p className='font-palanquin text-xs'>You</p>
           </div>
         </div>
       </div>
@@ -76,7 +76,7 @@ const Cart = () => {
               </div>
             </div>
           </>
-        ) : (<h1 className='text-3xl text-center mt-60 font-palanquin font-semibold text-coral-red'>Your Shopping Cart Is Empty..!</h1>)
+        ) : (<h1 className='text-3xl text-center mt-60 font-palanquin font-semibold'>Your <span className='text-coral-red'>Shopping Cart</span> Is Empty..!</h1>)
         }
       </div>
 

@@ -34,16 +34,16 @@ const Products = () => {
           <Link to='/cart'>
             <div className='flex flex-col'>
               <button><i class="fa-solid fa-cart-shopping fa-lg" style={{ color: "#FF6454" }}></i></button>
-              <p className='text-slate-gray font-palanquin text-xs ml-0.5'>Cart</p>
+              <p className='font-palanquin text-xs ml-0.5'>Cart</p>
             </div>
           </Link>
           <div className='flex flex-col'>
             <button><i class="fa-solid fa-user fa-lg" style={{ color: "#FF6454" }}></i></button>
-            <p className='text-slate-gray font-palanquin text-xs'>You</p>
+            <p className='font-palanquin text-xs'>You</p>
           </div>
         </div>
       </div>
-      <div className='lg:mt-36 mt-32 px-8 lg:px-0'>
+      <div className='mt-24 px-8 lg:mt-36 lg:px-0'>
         <h1 className='text-4xl font-palanquin font-bold'>
           Our <span className='text-coral-red'>Super Quality</span> Products
         </h1>
