@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 const Products = () => {
   return (
     <motion.section className='relative min-container my-14' initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0, transition: { duration: 0.1 } }}>
-      <div className='fixed max-sm:h-[62px] top-0 left-0 right-0 flex flex-1 justify-between items-center bg-white lg:px-20 lg:pt-6 lg:pb-3 shadow px-4 py-2 '>
+      <div className='fixed max-sm:h-[74px] top-0 left-0 right-0 flex flex-1 justify-between items-center bg-white lg:px-20 lg:pt-6 lg:pb-3 shadow px-4 '>
         <Link to='/' className='max-md:hidden'>
           <img
             src={boltHeaderLogo}
@@ -18,25 +18,29 @@ const Products = () => {
             height={29}
           />
         </Link>
-        <div className='rounded-full py-1.5 px-2.5 shadow md:hidden'>
-          <Link to='/products'>
-            <button><i class="fa-solid fa-chevron-left fa-xl" style={{ color: "#FF6454" }}></i></button>
+        <div className='rounded-full py-3.5 px-4 shadow md:hidden'>
+          <Link to='/'>
+            <button><i class="fa-solid fa-chevron-left fa-2xl" style={{ color: "#FF6454" }}></i></button>
             {/* <button><i class="fa-solid fa-arrow-left fa-xl" style={{ color: "#FF6454" }}></i></button> */}
           </Link>
         </div>
         <Link to='/cart' className='max-md:hidden'>
           <Button label="View cart" />
         </Link>
-        <div className='space-x-3 md:hidden'>
+        <div className='flex flex-row justify-center items-center space-x-4 md:hidden mt-3'>
           {/* <Link to='/'>
             <button><i class="fa-solid fa-house fa-lg" style={{ color: "#FF6454" }}></i></button>
           </Link> */}
           <Link to='/cart'>
-            <button><i class="fa-solid fa-cart-shopping fa-lg" style={{ color: "#FF6454" }}></i></button>
+            <div className='flex flex-col'> 
+              <button><i class="fa-solid fa-cart-shopping fa-xl" style={{ color: "#FF6454" }}></i></button>
+              <p className='text-slate-gray font-palanquin'>Cart</p>
+            </div>
           </Link>
-          <>
-            <button><i class="fa-solid fa-user fa-lg" style={{ color: "#FF6454" }}></i></button>
-          </>
+          <div className='flex flex-col'>
+            <button><i class="fa-solid fa-user fa-xl" style={{ color: "#FF6454" }}></i></button>
+            <p className='text-slate-gray font-palanquin'>You</p>
+          </div>
         </div>
       </div>
       <div className='lg:mt-36 mt-32 px-8 lg:px-0'>

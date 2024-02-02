@@ -34,7 +34,7 @@ const Cart = () => {
         <Link to='/products' className='max-md:hidden'>
           <Button label="Continue shopping" />
         </Link>
-        <div className='space-x-4 md:hidden'>
+        <div className='space-x-3 md:hidden'>
           <Link to='/'>
             <button><i class="fa-solid fa-house fa-lg" style={{ color: "#FF6454" }}></i></button>
           </Link>
