@@ -11,11 +11,11 @@ const Hero = () => {
 
   return (
     <section id='home' className='w-full flex lg:flex-row flex-col justify-center min-h-screen gap-10 max-container'>
-      <div className='relative lg:w-[45%] flex flex-col justify-center items-start w-full max-xl:padding-x pt-32'>
+      <div className='relative lg:w-[45%] flex flex-col justify-center items-start w-full max-xl:padding-x pt-28 sm:pt-32'>
         <p className='text-xl font-montserrat text-coral-red'>
           Our Brand New Collection
         </p>
-        <h1 className='mt-6 font-palanquin text-[72px] leading-[74px] max-sm:text-[72px] max-sm:leading-[82px] font-bold'>
+        <h1 className='sm:mt-6 mt-2 font-palanquin text-[72px] leading-[74px] max-sm:text-[72px] max-sm:leading-[82px] font-bold'>
           <span className='lg:bg-white lg:whitespace-nowrap relative md:z-10 pr-6'>The New Arrival</span>
           <br />
           <span className='text-coral-red inline-block mt-3 '>Bolt</span> Shoes

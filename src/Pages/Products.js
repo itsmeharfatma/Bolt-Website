@@ -14,7 +14,7 @@ const Products = () => {
           <img
             src={boltHeaderLogo}
             alt='Logo'
-            width={110}
+            width={130}
             height={29}
           />
         </Link>

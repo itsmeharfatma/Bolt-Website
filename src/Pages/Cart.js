@@ -21,7 +21,7 @@ const Cart = () => {
           <img
             src={boltHeaderLogo}
             alt='Logo'
-            width={110}
+            width={130}
             height={29}
           />
         </Link>
@@ -47,7 +47,7 @@ const Cart = () => {
           </div>
         </div>
       </div>
-      <div className='mt-20 sm:mt-28 px-8 lg:px-0 flex justify-center items-start max-md:flex-col sm:gap-28 w-full'>
+      <div className='mt-20 sm:mt-36 px-8 lg:px-0 flex justify-center items-start max-md:flex-col sm:gap-28 w-full'>
         {totalAmount > 0 ? (
           <>
             <div className='flex flex-1 flex-col'>
