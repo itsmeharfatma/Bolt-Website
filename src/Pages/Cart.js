@@ -25,7 +25,7 @@ const Cart = () => {
             height={29}
           />
         </Link>
-        <div className='rounded-full py-1.5 px-2.5 shadow md:hidden'>
+        <div className='rounded-full py-2 px-3 shadow md:hidden'>
           <Link to='/products'>
             <button><i class="fa-solid fa-chevron-left fa-xl" style={{ color: "#FF6454" }}></i></button>
             {/* <button><i class="fa-solid fa-arrow-left fa-xl" style={{ color: "#FF6454" }}></i></button> */}
@@ -34,13 +34,17 @@ const Cart = () => {
         <Link to='/products' className='max-md:hidden'>
           <Button label="Continue shopping" />
         </Link>
-        <div className='space-x-3 md:hidden'>
+        <div className='flex flex-row justify-center items-center space-x-3 md:hidden mt-2'>
           <Link to='/'>
-            <button><i class="fa-solid fa-house fa-lg" style={{ color: "#FF6454" }}></i></button>
+            <div className='flex flex-col'>
+              <button><i class="fa-solid fa-house fa-lg" style={{ color: "#FF6454" }}></i></button>
+              <p className='text-slate-gray font-palanquin text-xs'>Home</p>
+            </div>
           </Link>
-          <>
+          <div className='flex flex-col'>
             <button><i class="fa-solid fa-user fa-lg" style={{ color: "#FF6454" }}></i></button>
-          </>
+            <p className='text-slate-gray font-palanquin text-xs'>You</p>
+          </div>
         </div>
       </div>
       <div className='mt-20 sm:mt-28 px-8 lg:px-0 flex justify-center items-start max-md:flex-col sm:gap-28 w-full'>
