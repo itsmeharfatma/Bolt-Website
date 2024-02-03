@@ -40,7 +40,7 @@ const Navbar = () => {
                 </Link>
 
                 {/* Hamburger-Menu-Icon */}
-                <div onClick={() => setOpen(!open)} className='absolute right-6 top-[34px] cursor-pointer lg:hidden w-6 h-6'>
+                <div onClick={() => setOpen(!open)} className='absolute right-6 top-[30px] cursor-pointer lg:hidden w-6 h-6'>
                     {open ? <i class="fa-solid fa-xmark fa-xl"></i> : <i class="fa-solid fa-bars fa-xl"></i>}
                 </div>
             </nav>

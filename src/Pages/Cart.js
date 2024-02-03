@@ -47,14 +47,14 @@ const Cart = () => {
           </div>
         </div>
       </div>
-      <div className='mt-20 sm:mt-36 px-8 lg:px-0 flex justify-center items-start max-md:flex-col sm:gap-28 w-full'>
+      <div className='mt-24 sm:mt-36 px-8 lg:px-0 flex justify-center items-start max-md:flex-col sm:gap-28 w-full'>
         {totalAmount > 0 ? (
           <>
             <div className='flex flex-1 flex-col'>
               <h1 className='text-3xl sm:text-4xl font-palanquin font-bold'>
                 Your <span className='text-coral-red'>Cart</span> Items
               </h1>
-              <p className='md:max-w-xl font-montserrat text-base sm:text-lg leading-7 text-green-600 mt-0 sm:mt-4'>
+              <p className='md:max-w-xl font-montserrat text-base sm:text-lg leading-7 text-green-600 mt-1 sm:mt-4'>
                 <span><i class="fa-solid fa-circle-check fa-lg" style={{ color: "#00c24a" }}></i> </span>
                 Your order is eligible for <span className='font-semibold'>Free</span> Delivery.
               </p>
