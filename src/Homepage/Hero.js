@@ -15,12 +15,12 @@ const Hero = () => {
         <p className='text-xl font-montserrat text-coral-red'>
           Our Brand New Collection
         </p>
-        <h1 className='sm:mt-6 mt-2 font-palanquin text-[72px] leading-[74px] max-sm:text-[72px] max-sm:leading-[82px] font-bold'>
+        <h1 className='sm:mt-6 mt-4 font-palanquin text-[72px] leading-[74px] max-sm:text-[64px] max-sm:leading-[66px] font-bold'>
           <span className='lg:bg-white lg:whitespace-nowrap relative md:z-10 pr-6'>The New Arrival</span>
           <br />
-          <span className='text-coral-red inline-block mt-3 '>Bolt</span> Shoes
+          <span className='text-coral-red inline-block mt-1.5 sm:mt-3'>Bolt</span> Shoes
         </h1>
-        <p className='font-montserrat text-slate-gray text-lg leading-7 mt-7 mb-10 sm:max-w-sm'>
+        <p className='font-montserrat text-slate-gray text-lg leading-7 mt-6 mb-7 sm:mt-7 sm:mb-10 sm:max-w-sm'>
           Discover stylish Bolt arrivals, quality comfort, and innovation for your active life.
         </p>
 
@@ -28,7 +28,7 @@ const Hero = () => {
           <Button label="Shop now" iconURL={arrowRight} />
         </Link>
 
-        <div className='flex justify-start items-start flex-wrap w-full mt-10 gap-12'>
+        <div className='flex justify-start items-start flex-wrap w-full mt-9 gap-8 sm:mt-10 sm:gap-12'>
           {statistics.map((stat) => (
             <div key={stat.label}>
               <p className='text-4xl font-palanquin font-bold'>{stat.value}</p>

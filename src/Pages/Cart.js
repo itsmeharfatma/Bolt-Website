@@ -47,7 +47,7 @@ const Cart = () => {
           </div>
         </div>
       </div>
-      <div className='mt-24 sm:mt-36 px-8 lg:px-0 flex justify-center items-start max-md:flex-col sm:gap-28 w-full'>
+      <div className='mt-[104px] sm:mt-36 px-8 lg:px-0 flex justify-center items-start max-md:flex-col sm:gap-28 w-full'>
         {totalAmount > 0 ? (
           <>
             <div className='flex flex-1 flex-col'>
@@ -68,8 +68,8 @@ const Cart = () => {
             </div>
 
             <div className='flex flex-1 justify-center items-center'>
-              <div className='mt-20 sm:mt-28 flex flex-col gap-3'>
-                <p className='text-xl font-montserrat leading-normal font-semibold'>Subtotal: <span className='text-coral-red'>${totalAmount}</span></p>
+              <div className='mt-12 sm:mt-28 flex flex-col gap-1.5 sm:gap-2.5'>
+                <p className='text-lg sm:text-xl font-montserrat leading-normal font-semibold ml-0.5'>Subtotal: <span className='text-coral-red'>${totalAmount}</span></p>
                 <div>
                   <Button label="Proceed to Buy" iconURL={arrowRight} />
                 </div>

@@ -43,11 +43,11 @@ const Products = () => {
           </div>
         </div>
       </div>
-      <div className='mt-24 px-8 lg:mt-36 lg:px-0'>
+      <div className='mt-[104px] px-8 lg:mt-36 lg:px-0'>
         <h1 className='text-3xl sm:text-4xl font-palanquin font-bold'>
           Our <span className='text-coral-red'>Super Quality</span> Products
         </h1>
-        <p className='md:max-w-xl font-montserrat text-base sm:text-lg sm:leading-7 leading-6 text-slate-gray mt-1 sm:mt-4'>
+        <p className='md:max-w-xl font-montserrat text-base sm:text-lg sm:leading-7 leading-6 text-slate-gray mt-2 sm:mt-4'>
           Experience top-notch quality and style with our sought-after selections. Discover a world of comfort, design, and value
         </p>
         <div className='mt-4 sm:mt-6 grid lg:gird-cols-4 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 sm:gap-10 gap-8'>
