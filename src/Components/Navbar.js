@@ -20,7 +20,7 @@ const Navbar = () => {
                     />
                 </a>
 
-                <ul className={`lg:flex lg:flex-1 lg:justify-center lg:space-x-10 lg:items-center lg:py-0 py-8 absolute lg:static lg:px-0 px-4  ${open ? 'top-24 left-5 space-y-4 bg-white w-[88%] h-64 shadow-xl' : 'top-[-490px]'}`}>
+                <ul className={`lg:flex lg:flex-1 lg:justify-center lg:space-x-10 lg:items-center lg:py-0 py-8 absolute lg:static lg:px-0 px-4  ${open ? 'top-24 left-5 space-y-4 bg-white w-[88%] h-72 shadow-xl' : 'top-[-490px]'}`}>
                     {navLinks.map((item) => (
                         <li key={item.label}>
                             <a href={item.href} className='font-montserrat leading-normal text-lg text-slate-gray'>
@@ -28,6 +28,11 @@ const Navbar = () => {
                             </a>
                         </li>
                     ))}
+                    <li>
+                        <Link to='/cart' className='font-montserrat leading-normal text-lg text-slate-gray lg:hidden'>
+                            Cart
+                        </Link>
+                    </li>
                     <li>
                         <Link to='/' className='font-montserrat leading-normal text-lg text-slate-gray lg:hidden'>
                             Sign Up

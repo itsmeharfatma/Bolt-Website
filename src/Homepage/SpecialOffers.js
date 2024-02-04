@@ -7,7 +7,7 @@ const SpecialOffers = () => {
   return (
     <section className='flex justify-wrap items-center max-md:flex-col-reverse gap-10 min-container'>
       <div className='flex flex-1'>
-        <img 
+        <img
           src={offer}
           alt='Special Offer Collection'
           width={500}
@@ -28,11 +28,11 @@ const SpecialOffers = () => {
         </p>
 
         <div className='mt-7 flex flex-wrap gap-4'>
-          <Button 
+          <Button
             label="Shop now"
             iconURL={arrowRight}
           />
-          <Button 
+          <Button
             label="Learn more"
             backgroundColor="bg-white"
             borderColor="border border-slate-gray"

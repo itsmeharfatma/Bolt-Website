@@ -23,9 +23,17 @@ const PolularProducts = () => {
         ))}
       </div>
 
-      <div className='mt-6'>
+      <div className='mt-10 sm:mt-6 flex flex-wrap gap-4'>
         <Link to='/products'>
-          <Button label="View more" iconURL={arrowRight} />
+          <Button label="View more"/>
+        </Link>
+        <Link to='/cart'>
+          <Button
+            label="View cart"
+            backgroundColor="bg-pale-blue"
+            borderColor="border border-slate-gray"
+            textColor="text-slate-gray"
+          />
         </Link>
       </div>
     </section>
