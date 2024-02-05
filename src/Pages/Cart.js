@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { products } from '../constants';
 import { ShopContext } from '../context/ShopContextProvider';
-import { boltHeaderLogo } from '../assets/image/images';
+import { boltHeaderLogo, shoppingCart } from '../assets/image/images';
 import { arrowRight } from '../assets/icon/icons';
 import CartItems from '../Components/CartItems';
 import Button from '../Components/Button';
@@ -76,7 +76,19 @@ const Cart = () => {
               </div>
             </div>
           </>
-        ) : (<h1 className='text-3xl text-center mt-60 font-palanquin font-semibold'>Your <span className='text-coral-red'>Shopping Cart</span> Is Empty..!</h1>)
+        ) : (
+          <div className='flex flex-col'>
+            <img
+              src={shoppingCart}
+              alt='shopping-cart illustration'
+              width={350}
+              height={29}
+              className='mt-28 md:mt-10'
+            />
+            <h1 className='text-2xl text-center mt-2 font-montserrat font-semibold'>Your <span className='text-coral-red'>Shopping Cart</span> Is Empty..!</h1>
+
+          </div>
+        )
         }
       </div>
 

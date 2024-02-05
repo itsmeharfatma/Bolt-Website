@@ -9,6 +9,7 @@ import boltHeaderLogo from './bolt-header-logo.png'
 import boltFooterLogo from './bolt-footer-logo.png'
 
 import offer from './offer.png'
+import shoppingCart from './shopping-fun.png'
 
 import shoe4 from './shoe4.svg'
 import shoe5 from './shoe5.svg'
@@ -33,6 +34,7 @@ export {
     boltFooterLogo,
 
     offer,
+    shoppingCart,
     shoe4,
     shoe5,
     shoe6,
